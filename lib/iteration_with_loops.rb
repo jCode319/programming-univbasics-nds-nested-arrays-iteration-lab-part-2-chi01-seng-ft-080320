@@ -1,18 +1,19 @@
 def find_min_in_nested_arrays(src)
   # src will be an array of arrays of integers
   # Produce a new Array that contains the smallest number of each of the nested arrays
-  outer_results = []
+  array_of_daily_temperatures = []
   row_index = 0
   while row_index < src.count do
     element_index = 0
-    longest_string_element = ""
+    min_num = 0
     while element_index < src[row_index].count do
-        if src.min[row_index][element_index].length > longest_string_element.length
-          longest_string_element = src[row_index][element_index]
+      number = src[row_index][element_index]
+        if src[row_index][element_index].length > longest_string_element.length
       end
       element_index += 1
     end
-    outer_results << longest_string_element
+    array_of_daily_temperatures << min_num
     row_index += 1
   end
+  array_of_daily_temperatures
 end
