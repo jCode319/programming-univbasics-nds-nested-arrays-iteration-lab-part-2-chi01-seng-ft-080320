@@ -8,7 +8,6 @@ def find_min_in_nested_arrays(src)
     min_num = 0
     while element_index < src[row_index].count do
       number = src[row_index][element_index]
-        if src[row_index][element_index].length > longest_string_element.length
       end
       element_index += 1
     end
