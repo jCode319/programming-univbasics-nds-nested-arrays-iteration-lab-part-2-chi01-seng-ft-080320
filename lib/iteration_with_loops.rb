@@ -5,12 +5,12 @@ def find_min_in_nested_arrays(src)
     element_index = 0
     min_num = 100
     while element_index < src[row_index].count do
-      if src[row_index][element_index] > min_num
+      if src[row_index][element_index] < min_num
         min_num = src[row_index][element_index]
       end
       element_index += 1
     end
-    array_of_daily_temperatures << src[row_index][element_index].min
+    array_of_daily_temperatures << min_num
     row_index += 1
   end
   array_of_daily_temperatures
